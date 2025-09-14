@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Калькулятор</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="main.js" defer></script>
 </head>
@@ -12,19 +13,35 @@
 <body>
     <header></header>
     <main>
-        <form action="#" id="frm">
-            <label for="num1">Первое число</label>
-            <input type="text" name="num1" id="num1">
-            <label for="num2">Второе число</label>
-            <input type="text" name="num2" id="num2">
-            <label for="result">Результат</label>
-            <input type="text" name="result" id="result">
-            <button id="bAddition">+</button>
-            <button id="bDifference">-</button>
-            <button id="bMultiplication">*</button>
-            <button id="bDivision">/</button>
-            <button id="bResult">=</button>
-        </form>
+        <div class="container">
+            <form action="#" id="frm">
+                <div class="box_form">
+                    <div class="box_numbers">
+                        <div class="numb1">
+                            <label for="num1">Первое число:</label>
+                            <input type="text" name="num1" id="num1" class="input_num1">
+                        </div>
+                        <div class="numb2">
+                            <label for="num2">Второе число:</label>
+                            <input type="text" name="num2" id="num2" class="input_num2">
+                        </div>
+                    </div>
+                    <div class="box_buttons">
+                        <button id="bAddition" class="btn btn_calc">+</button>
+                        <button id="bDifference" class="btn btn_calc">-</button>
+                        <button id="bMultiplication" class="btn btn_calc">*</button>
+                        <button id="bDivision" class="btn btn_calc">/</button>
+                    </div>
+                    <div class="box_button_result">
+                        <button id="bResult" class="btn btn_res">=</button>
+                    </div>
+                    <div class="box_input_result">
+                        <label for="result">Результат</label>
+                        <input type="text" name="result" id="result" class="input_result">
+                    </div>
+                </div>
+            </form>
+        </div>
     </main>
     <footer></footer>
 </body>
